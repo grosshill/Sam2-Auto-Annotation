@@ -1,0 +1,10 @@
+<launch>
+<!--     启动自定义节点 -->
+    <!-- <include file="$(find realsense2_camera)/launch/rs_t265.launch"/> -->
+    <env name="PYTHONPATH" value="/home/drone/hyx/drone_pose_detect/catkin_ws/src/detect_pkg/scripts:$(env PYTHONPATH)" />
+    <node pkg="detect_pkg" type="rs_camera.py" name="D435i_camera" output="screen"/>
+    <node pkg="detect_pkg" type="drone_tracker.py" name="tracker" output="screen"/>
+    <node pkg="detect_pkg" type="tracker_manager.py" name="manager" output="screen"/>
+    <!-- <node name="bezier_node" pkg="visfly_node" type="visfly_bezier_node" output="screen"/> -->
+    <node pkg="detect_pkg" type="ekf" name="ekf_node" output="screen"/>
+</launch>

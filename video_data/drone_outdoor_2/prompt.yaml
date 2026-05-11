@@ -1,0 +1,10 @@
+start_frame: 29
+initial_box: [405, 380, 480, 420]
+#auxiliary:
+#    56:
+#      object_id: 0
+#      point:
+#        - [850, 900, 1]
+#    92:
+#      object_id: 0
+#      box: [400, 350, 800, 560]

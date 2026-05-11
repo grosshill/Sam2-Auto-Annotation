@@ -1,0 +1,9 @@
+initial_box: [540, 570, 790, 710]
+#auxiliary:
+#    56:
+#      object_id: 0
+#      point:
+#        - [850, 900, 1]
+#    92:
+#      object_id: 0
+#      box: [400, 350, 800, 560]
